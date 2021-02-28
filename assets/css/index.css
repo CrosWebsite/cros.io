@@ -46,11 +46,15 @@ body {
 }
 
 #nick {
-    width: 65%;
     float: left;
 }
 
-#gamemode {
+#server {
+    float: left;
+    width: 65%;
+}
+
+#connect {
     width: 33%;
     float: right;
 }
