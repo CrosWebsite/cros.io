@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="tr" lang="tr">
+<head>
+<title>Örümcek Flash Oyun Scripti | Ücretsiz PHP-MYSQL Flash Oyun Scripti</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-language" content="tr" />
+<link type="text/css" rel="stylesheet" href="reset.css" />
+<link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div class="wrapper">
+
+<div class="header">
+				<img src="images/logo.png" alt="" />
+			
+</div> <!-- HEADER -->
+
+		<div class="content">
+			<strong>Örümcek Flash Oyun Scripti - Upgrade Kılavuzu</strong> 
+			<br/><br/><span style="margin-left:10px;"></span>Aşağıdaki bilgiler ile sizlere versiyonlar arası upgrade işlemlerini nasıl yapmanız gerektiğini anlatılıyor<br/>
+			Upgrade işlemine başlamadan önce <b>Database ve FTP'deki dosyaları</b> full yedek almanız gerekiyor. Bu işlemi yapmadan kesinlikle upgrade işlemine başlamayınız.
+			
+					<li>Sorularınız için <a href="http://forum.orumcekoyun.com" target="_blank">TIKLAYIN</a><li>
+			
+			
+			<div class="clearfix"></div>
+			<div class="line"></div>
+			<strong>4.0.0 -> 4.0.1</strong> 
+			<br/><br/>
+			<ul>
+				<li>FOR_UPGRADE klasöründeki tüm dosyaları FTPye atın ve UPGRADE/upgrade.php dosyasını çalıştırın</li>
+				<li>Admin girişi yapın. Ayarları kaydet butonuna basın ve cache boşaltın.</li>
+				<li>FTP den templates_c klasörünün içerisindeki dosyaları silin</li>
+			</ul>		
+			
+			
+			<div class="clearfix"></div>
+			<div class="line"></div>
+			<strong>4.0.0 Beta-3 -> 4.0.0</strong> 
+			<br/><br/>
+			<ul>
+				<li>FOR_UPGRADE klasöründeki tüm dosyaları FTPye atın ve UPGRADE/upgrade.php dosyasını çalıştırın</li>
+				<li>Admin girişi yapın. Ayarları kaydet butonuna basın ve cache boşaltın.</li>
+				<li>FTP den templates_c klasörünün içerisindeki dosyaları silin</li>
+			</ul>		
+			
+			
+			<div class="clearfix"></div>
+			<div class="line"></div>
+			<strong>4.0.0 Beta-2 -> 4.0.0 BETA-3 Upgrade</strong> 
+			<br/><br/>
+			<ul>
+				<li>FOR_UPGRADE klasöründeki tüm dosyaları FTPye atın ve UPGRADE/upgrade.php dosyasını çalıştırın</li>
+			</ul>			
+			
+			
+			<div class="clearfix"></div>
+			<div class="line"></div>
+			<strong>4.0.0 Beta -> 4.0.0 BETA-2 Upgrade</strong> 
+			<br/><br/>
+			<ul>
+				<li>FOR_UPGRADE klasöründeki tüm dosyaları FTPye atın ve UPGRADE/upgrade.php dosyasını çalıştırın</li>
+			</ul>
+			
+			<div class="clearfix"></div>
+			<div class="line"></div>
+
+			<strong>3x -> 4.0.0 BETA Upgrade</strong> 
+			<br/><br/>
+			<ul>
+				<li>Aşağıdaki dosyaları ve klasörleri silin</li>
+				<p>
+				<span class="qt">
+						cache klasörü<br/>
+						install klasörü (varsa) (ama varsa niye var? çok daha önceden silmeliydiniz. bu klasör FTPde durmamalı)<br/>
+						includes klasörü<br/>
+						lang klasörü<br/>
+						libs klasörü<br/>
+						moduller klasörü<br/>
+						panel klasörü<br/>
+						security klasörü<br/>
+						templates_c klasörü<br/>
+						upgrade klasörü (varsa) (ama varsa niye var? çok daha önceden silmeliydiniz. bu klasör FTPde durmamalı)<br/>
+						uye klasörü<br/>
+				</span>
+				<p>
+				<br/>
+				
+				<li>V4 ile beraber gelen GLOBALDEFINE.PHP yi açıp COOKIE GÜVENLİK KODU (RASTGELE 15-20 KARAKTER YAZIN) , DB bilgilerini ve site adresini girin</li>
+				<li>Sitemiz alttan lisans kaldırma dosyasına sahipse artık bu dosyanın bir önemi kalmıyor. <a href="http://lisans.orumcekoyun.com" target="_blank">BURAYA</a> tıklayarak V4 için lisans kodu alın ve <b>GLOBALDEFINE.PHP</b> deki <b>$remove_footer_link = "";</b> bölümündeki çift tırnağın arasına yazın</li>
+				<li>Aşağıdaki klasör ve dosyaları FTPye atıyoruz. (varsa üzerine yazılacak)</li>
+				<p>
+				<span class="qt">
+						cache klasörü<br/>
+						images klasörü<br/>
+						includes klasörü<br/>
+						lang klasörü<br/>
+						libs klasörü<br/>
+						panel klasörü<br/>
+						template_events klasörü<br/>
+						templates_c klasörü<br/>
+						upgrade klasörü<br/>
+						uye klasörü<br/>
+						.htaccess dosyası<br/>
+						404.php dosyası<br/>
+						fonksiyon.php dosyası<br/>
+						globaldefine.php dosyası (içerisine DB bilgilerinizi ve site adresinizi girdiğinizden emin olun)<br/>
+						index.php dosyası<br/>
+						parse-url.php dosyası<br/>
+						rss.php dosyası<br/>
+				</span>
+				<p>
+				<br/>
+				<li>FTPye upload işlemi bittikten sonra aşağıdaki klasörlere 777 yetki verin</li>
+				<p>
+				<span class="qt">
+						cache klasörü<br/>
+						templates_c klasörü<br/>
+				</span>
+				<p>
+				<br/>
+				<li><b>upgrade/upgrade.php</b> dosyasını çalıştırın ve upgrade tamamlandı yazısını bekleyin</li>
+				<li>Upgrade tamamlandıktan sonra upgrade klasörünü mutlaka silin</li>
+				<li>Admin panele girin ve cache boşaltın, daha sonra site ayarları bölümünde 1 defa AYARLARI KAYDET butonuna basın</li>
+				<li>Templates_c klasörünün içini boşaltın</li>
+				<li>SİTE AYARLARI / SEF bölümünden kalıcı bağlantı ayarlarınızı yapın</li>
+				<li>4.0.0 BETA Upgrade tamamlandı. <a href="http://forum.orumcekoyun.com/showthread.php?t=5978" target="_blank">BU LİNKTEKİ</a> adımları izleyerek tema değişikliklerini yapın</li>
+				
+				
+			</ul>
+			<div class="clearfix"></div>
+			<div class="line"></div>
+	</div> <!-- CONTENT -->
+
+	<div class="footer">
+			<div class="wrapper">
+				<span style="float:left;">
+				Copyright © 2010-<?php echo date('Y') ?> http://www.orumcekoyun.com
+					<br/>Tüm hakları saklıdır.
+					<br/>Powered By orumcekoyun.com 
+					<br/>Tasarım: orumcekoyun.com
+				</span>	
+				
+			</div>
+				<div class="clearfix"></div>
+
+		</div>
+	</div>
+</body>
+</html>
