@@ -46,28 +46,41 @@ body {
 }
 
 #nick {
-    width: 65%;
     float: left;
 }
 
-#gamemode {
+#server {
+    float: left;
+    width: 65%;
+}
+
+#connect {
     width: 33%;
     float: right;
 }
 
 #helloDialog {
     width: 400px;
+    height: 564px;
     background-color: #FFFFFF;
     margin: 10px auto;
     border-radius: 15px;
     padding: 5px 15px 5px 15px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    top: calc(50% - 250px);
+    left: calc(50% - 300px);
+}
+
+#authDialog {
+    width: 400px;
+    height: 500px;
+    background-color: #FFFFFF;
+    margin: 10px auto;
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
+    position: absolute;
+    top: calc(50% - 250px);
+    left: calc(50% + 116px);
 }
 
 #chat_textbox {
@@ -101,6 +114,10 @@ body {
 #play-btn {
     width: 85%;
     float: left;
+}
+
+#auth-btn {
+    width: 100%;
 }
 
 #settings-btn {
