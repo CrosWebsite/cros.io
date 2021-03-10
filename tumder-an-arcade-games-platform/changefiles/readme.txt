@@ -1,0 +1,13 @@
+assets/language/english.php
+assets/language/french.php
+assets/language/spanish.php
+assets/requests/admin/addgame.php
+assets/requests/admin/editgame.php
+assets/requests/admin/install-premium-games-catalog.php
+templates/tumder/content/admin/sections/edit-games-section.php
+templates/tumder/content/admin/sections/view-games-section.php
+templates/tumder/content/global/footer/admin-panel-scripts.php
+templates/tumder/content/global/header/admin-stylesheets.php
+templates/tumder/content/global/header/scripts.php
+templates/tumder/css/admin/36mqcX5bF3-1.css
+templates/tumder/js/admin/engine-admin.js
